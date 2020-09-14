@@ -1,6 +1,5 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { NgxSmartModalLoaderBasePopupComponent } from 'ngx-smart-modal-loader';
-import { NgxSmartModalService } from 'ngx-smart-modal';
 
 @Component({
   selector: 'ngx-login-popup',
@@ -12,8 +11,8 @@ export class LoginPopupComponent extends NgxSmartModalLoaderBasePopupComponent i
   @Output() destroy: EventEmitter<boolean> = new EventEmitter();
   @Output() ready: EventEmitter<boolean> = new EventEmitter();
 
-  constructor(protected ngxSmartModalService: NgxSmartModalService) {
-    super(ngxSmartModalService);
+  constructor() {
+    super();
   }
 
   ngOnInit(): void {}

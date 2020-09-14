@@ -34,7 +34,10 @@ export class NgxSmartModalLoaderService {
       const modal = this.ngxSmartModalService.get(popupId);
       modal.open(true);
     });
-    compRef.instance.destroy.subscribe(() => compRef.destroy());
+    compRef.instance.destroy.subscribe(() => {
+      this.ngxSmartModalService.getModal(popupId).close();
+      compRef.destroy();
+    });
   }
 
   private createPopup<T>(

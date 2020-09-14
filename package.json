@@ -1,6 +1,7 @@
 {
   "name": "ngx-smart-modal-loader-library",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": "Lukasz Gawrys (alphta.de)",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

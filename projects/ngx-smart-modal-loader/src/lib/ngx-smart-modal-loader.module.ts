@@ -1,16 +1,12 @@
 import { NgModule, InjectionToken, ModuleWithProviders } from '@angular/core';
-import { NgxSmartModalLoaderBasePopupComponent } from './ngx-smart-modal-loader-base-popup';
-import { NgxSmartModalModule, NgxSmartModalService } from 'ngx-smart-modal';
+import { NgxSmartModalModule } from 'ngx-smart-modal';
 
-export const GLOBAL_POPUPS = new InjectionToken('GLOBAL_POPUPS', {
-  providedIn: 'root',
-  factory: () => {}
-});
+export const GLOBAL_POPUPS = new InjectionToken('GLOBAL_POPUPS');
 
 @NgModule({
   declarations: [],
   imports: [
-    NgxSmartModalModule.forChild(),
+    NgxSmartModalModule,
   ],
   exports: []
 })

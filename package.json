@@ -2,6 +2,13 @@
   "name": "ngx-smart-modal-loader-library",
   "version": "0.0.1",
   "author": "Lukasz Gawrys (alphta.de)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alphta-de/ngx-smart-modal-loader"
+  },
+  "bugs": {
+    "url": "https://github.com/alphta-de/ngx-smart-modal-loader/issues"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
